@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "legend": {"labelFontSize": 12, "labelLimit": 300, "orient": "top-left", "symbolSize": 150, "titleFontSize": 14}, "title": {"anchor": "start", "color": "black", "fontSize": 20, "fontWeight": "bold", "offset": 20}}, "layer": [{"data": {"name": "data-a9a5224e2dfcd0cdb1fe18a18f326142"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "Category", "scale": {"domain": ["DDS (USD million)", "Services exports (USD Million)", "DDS share over services exports (%)"], "range": ["#a6cee3", "#fdbf6f", "#54a24b"]}, "title": null, "type": "nominal"}, "tooltip": [{"field": "Year", "type": "ordinal"}, {"field": "Category", "type": "nominal"}, {"field": "Value", "format": ",", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0, "labelFontSize": 14, "titleFontSize": 16}, "field": "Year", "title": "Year", "type": "ordinal"}, "xOffset": {"field": "Category", "type": "nominal"}, "y": {"axis": {"labelFontSize": 14, "labelPadding": 5, "offset": 10, "title": "USD Millions", "titleFontSize": 16}, "field": "Value", "type": "quantitative"}}}, {"data": {"name": "data-9ca90ccf0fcd4da9f52cacd9f32e50a0"}, "mark": {"type": "line", "point": {"filled": true, "size": 60}}, "encoding": {"color": {"field": "LineCategory", "scale": {"domain": ["DDS (USD million)", "Services exports (USD Million)", "DDS share over services exports (%)"], "range": ["#a6cee3", "#fdbf6f", "#54a24b"]}, "title": null, "type": "nominal"}, "tooltip": [{"field": "Year", "type": "ordinal"}, {"field": "Value", "format": ".0%", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0, "labelFontSize": 14, "titleFontSize": 16}, "field": "Year", "title": "Year", "type": "ordinal"}, "y": {"axis": {"format": "%", "labelFontSize": 14, "labelPadding": 5, "offset": 10, "orient": "right", "title": "DDS exports share over services exports (%)", "titleAngle": -90, "titleFontSize": 16, "titlePadding": 20}, "field": "Value", "scale": {"domain": [0, 1]}, "type": "quantitative"}}}], "height": 350, "resolve": {"scale": {"y": "independent"}}, "title": "Trends in digitally delivered services (DDS) exports and commercial services exports, period 2005\u20132023.", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-a9a5224e2dfcd0cdb1fe18a18f326142": [{"Year": 2005, "Category": "DDS (USD million)", "Value": 1014566.285}, {"Year": 2006, "Category": "DDS (USD million)", "Value": 1175109.988}, {"Year": 2007, "Category": "DDS (USD million)", "Value": 1435745.587}, {"Year": 2008, "Category": "DDS (USD million)", "Value": 1615416.361}, {"Year": 2009, "Category": "DDS (USD million)", "Value": 1507728.322}, {"Year": 2010, "Category": "DDS (USD million)", "Value": 1601540.307}, {"Year": 2011, "Category": "DDS (USD million)", "Value": 1831696.327}, {"Year": 2012, "Category": "DDS (USD million)", "Value": 1887374.81}, {"Year": 2013, "Category": "DDS (USD million)", "Value": 2028185.561}, {"Year": 2014, "Category": "DDS (USD million)", "Value": 2232074.918}, {"Year": 2015, "Category": "DDS (USD million)", "Value": 2164897.36}, {"Year": 2016, "Category": "DDS (USD million)", "Value": 2243981.74}, {"Year": 2017, "Category": "DDS (USD million)", "Value": 2436916.942}, {"Year": 2018, "Category": "DDS (USD million)", "Value": 2678256.345}, {"Year": 2019, "Category": "DDS (USD million)", "Value": 2814795.854}, {"Year": 2020, "Category": "DDS (USD million)", "Value": 3205104.751}, {"Year": 2021, "Category": "DDS (USD million)", "Value": 3775401.455}, {"Year": 2022, "Category": "DDS (USD million)", "Value": 3949694.136}, {"Year": 2023, "Category": "DDS (USD million)", "Value": 4281699.515}, {"Year": 2005, "Category": "Services exports (USD Million)", "Value": 2696098.0}, {"Year": 2006, "Category": "Services exports (USD Million)", "Value": 3044737.0}, {"Year": 2007, "Category": "Services exports (USD Million)", "Value": 3641323.0}, {"Year": 2008, "Category": "Services exports (USD Million)", "Value": 4093287.0}, {"Year": 2009, "Category": "Services exports (USD Million)", "Value": 3671507.0}, {"Year": 2010, "Category": "Services exports (USD Million)", "Value": 3997337.0}, {"Year": 2011, "Category": "Services exports (USD Million)", "Value": 4494029.0}, {"Year": 2012, "Category": "Services exports (USD Million)", "Value": 4624026.0}, {"Year": 2013, "Category": "Services exports (USD Million)", "Value": 4907710.0}, {"Year": 2014, "Category": "Services exports (USD Million)", "Value": 5268626.0}, {"Year": 2015, "Category": "Services exports (USD Million)", "Value": 5039951.0}, {"Year": 2016, "Category": "Services exports (USD Million)", "Value": 5114677.0}, {"Year": 2017, "Category": "Services exports (USD Million)", "Value": 5576865.0}, {"Year": 2018, "Category": "Services exports (USD Million)", "Value": 6153667.0}, {"Year": 2019, "Category": "Services exports (USD Million)", "Value": 6357623.0}, {"Year": 2020, "Category": "Services exports (USD Million)", "Value": 5263490.0}, {"Year": 2021, "Category": "Services exports (USD Million)", "Value": 6334064.0}, {"Year": 2022, "Category": "Services exports (USD Million)", "Value": 7306879.0}, {"Year": 2023, "Category": "Services exports (USD Million)", "Value": 7913451.0}], "data-9ca90ccf0fcd4da9f52cacd9f32e50a0": [{"Year": 2005, "Category": "DDS exports share over services exports", "Value": 0.3763091271162992, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2006, "Category": "DDS exports share over services exports", "Value": 0.38594794492923357, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2007, "Category": "DDS exports share over services exports", "Value": 0.3942922907415794, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2008, "Category": "DDS exports share over services exports", "Value": 0.3946501579293121, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2009, "Category": "DDS exports share over services exports", "Value": 0.41065652932161095, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2010, "Category": "DDS exports share over services exports", "Value": 0.40065181069296885, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2011, "Category": "DDS exports share over services exports", "Value": 0.40758444749688977, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2012, "Category": "DDS exports share over services exports", "Value": 0.4081669977634209, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2013, "Category": "DDS exports share over services exports", "Value": 0.41326516053312035, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2014, "Category": "DDS exports share over services exports", "Value": 0.42365408324675163, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2015, "Category": "DDS exports share over services exports", "Value": 0.429547303138463, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2016, "Category": "DDS exports share over services exports", "Value": 0.43873381251641114, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2017, "Category": "DDS exports share over services exports", "Value": 0.43696896769062904, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2018, "Category": "DDS exports share over services exports", "Value": 0.4352293266762729, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2019, "Category": "DDS exports share over services exports", "Value": 0.442743436344055, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2020, "Category": "DDS exports share over services exports", "Value": 0.608931479113668, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2021, "Category": "DDS exports share over services exports", "Value": 0.5960472541799389, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2022, "Category": "DDS exports share over services exports", "Value": 0.540544620487078, "LineCategory": "DDS share over services exports (%)"}, {"Year": 2023, "Category": "DDS exports share over services exports", "Value": 0.5410660298522099, "LineCategory": "DDS share over services exports (%)"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
+<div style="margin-top: 20px; text-align:left; padding-left:40px; font-family: 'Helvetica Neue', Arial, sans-serif;">
+  <p style="font-size:16px; color:black; margin: 0 0 8px 0;">
+    <strong>Source:</strong> WTO data on digitally delivered services trade and commercial services trade
+  </p>
+  <a href="https://github.com/sergioalf14/publicvizs/raw/main/excel_with_combined_chart%20(11).xlsx"
+     target="_blank"
+     style="font-size:16px; font-weight:bold; text-decoration:none; color:#1f77b4;">
+    ⬇️ Download data
+  </a>
+</div>
